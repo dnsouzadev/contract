@@ -6,15 +6,15 @@ import java.util.List;
 
 public class Contract {
     private Integer number;
-    private LocalDate data;
+    private LocalDate date;
     private Double totalValue;
 
     private List<Installment> installments = new ArrayList<>();
     public Contract() {}
 
-    public Contract(Integer number, LocalDate data, Double totalValue) {
+    public Contract(Integer number, LocalDate date, Double totalValue) {
         this.number = number;
-        this.data = data;
+        this.date = date;
         this.totalValue = totalValue;
     }
 
@@ -26,12 +26,12 @@ public class Contract {
         this.number = number;
     }
 
-    public LocalDate getData() {
-        return data;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setData(LocalDate data) {
-        this.data = data;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Double getTotalValue() {
